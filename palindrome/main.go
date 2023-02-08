@@ -23,6 +23,17 @@ func main() {
 	fmt.Println(show)
 }
 
+func palindromV2(data string) string {
+	var rev string
+	result = "its not a palindrome
+	for i := 0; i < len(data); i++ {
+		rev += string(data[len(data) - 1 - i])
+	}
+	if rev == data {
+		result = "its palindrome"
+	}
+	return result
+}
 func palindrom(data string) string {
 	var result string
 	for i := 0; i < len(data)/2; i++ {
